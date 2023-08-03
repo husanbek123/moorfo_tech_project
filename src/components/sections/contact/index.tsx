@@ -1,7 +1,11 @@
 import Form from "./form";
 import styles from "./index.module.scss";
 
+import { useTranslation } from "react-i18next";
+
 export default function Contact() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="contact"
@@ -13,11 +17,8 @@ export default function Contact() {
       ].join(" ")}
     >
       <div className={styles.contact__text}>
-        <h1>ДАВАЙТЕ НЕ НАЧНЕМ ВАШ ПРОЕКТ</h1>
-        <p>
-          Оставьте заявку, озвучьте ваши пожелания, всю их реализацию мы возьмем
-          на себя.
-        </p>
+        <h1>{t("contact.title")}</h1>
+        <p>{t("contact.text")}</p>
       </div>
       <div className={styles.contact__form}>
         <Form />
