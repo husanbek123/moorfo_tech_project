@@ -1,8 +1,11 @@
 import LightShadow from "../../ui/lightShadow";
 import styles from "./index.module.scss";
 import StatisticCard from "./statisticCard";
+import { useTranslation } from "react-i18next";
 
 export default function Statistics() {
+  const { t } = useTranslation();
+
   return (
     <section
       className={[
@@ -22,9 +25,9 @@ export default function Statistics() {
         scale="100px"
       />
 
-      <StatisticCard data="12+" title="Успешных лет в IT бизнесе" />
-      <StatisticCard data="150+" title="ВЫПОЛНЕНЫХ ПРОЕКТОВ ПОД КЛЮЧ" />
-      <StatisticCard data="250+" title="Довольных клиентов" />
+      <StatisticCard data="12+" title={t("statistic.years")} />
+      <StatisticCard data="150+" title={t("statistics.completed")} />
+      <StatisticCard data="250+" title={t("statistics.costomers")} />
     </section>
   );
 }

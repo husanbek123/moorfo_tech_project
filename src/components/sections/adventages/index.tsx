@@ -1,5 +1,6 @@
 import styles from "./index.module.scss";
 import Adventage from "./adventage";
+import { useTranslation } from "react-i18next";
 
 interface OurAdventage {
   title: string;
@@ -42,6 +43,7 @@ const defaultAdventages: OurAdventage[] = [
 ];
 
 export default function Adventages({ adventages = defaultAdventages }: Props) {
+  const { t } = useTranslation();
   return (
     <section
       className={[
@@ -52,13 +54,17 @@ export default function Adventages({ adventages = defaultAdventages }: Props) {
     >
       <header>
         <h1 id="advantages" className="font_h1">
-          МЫ ПОМОЖЕМ СТАТЬ ВАШЕМУ БИЗНЕСУ УНИКАЛЬНЫМ И ПРИБЫЛЬНЫМ
+          {t("advantages.title")}
         </h1>
       </header>
 
       <div className={styles.adventages__main}>
         {adventages.map((adventage, index) => (
-          <Adventage order={index + 1} {...adventage} />
+          <Adventage
+            order={index + 1}
+            {...adventage}
+            title={t("advantages.card.title")}
+          />
         ))}
       </div>
     </section>

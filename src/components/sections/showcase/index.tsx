@@ -8,9 +8,11 @@ import LightShadow from "../../ui/lightShadow";
 
 import { Button } from "@mantine/core";
 import useStore from "../../../Store";
+import { useTranslation } from "react-i18next";
 
 export default function Showcase() {
   const { theme } = useStore();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -60,10 +62,8 @@ export default function Showcase() {
           radius="10000000px"
         />
         <div className={styles.showcase__text}>
-          <h6>Добро пожаловать в Webline</h6>
-          <h1 className="font_h1">
-            Разработаем эффективный web-проект для вашего бизнеса
-          </h1>
+          <h6>{t("showcase.welcome")}</h6>
+          <h1 className="font_h1">{t("showcase.title")}</h1>
           <div className={styles.showcase__text__buttons}>
             <Button color="green" size="lg" compact>
               Register
