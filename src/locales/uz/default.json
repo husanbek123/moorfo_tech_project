@@ -1,0 +1,26 @@
+{
+  "advantages": {
+    "card": { "title": "Mobil ilovalar yaratish" },
+    "title": "BIZ SIZNING BIZNESINGIZNI BEKOR QUM DAROFLI BO'LISHINGIZGA YORDAM BERAMIZ"
+  },
+  "contact": {
+    "text": "So'rov qoldiring, o'z istaklaringizni bildiring, biz ularning barcha bajarilishiga g'amxo'rlik qilamiz.",
+    "title": "LAYIHONINGIZNI BOSHLAYLIK"
+  },
+  "footer": {
+    "text": "Biz veb-saytlarni ishlab chiqamiz va amalga oshiramiz, korporativ identifikatsiyani yaratamiz va doimiy ravishda siz bilan loyihalar uchun ma'lumot va texnik yordam almashamiz."
+  },
+  "showcase": {
+    "title": "Biz sizning biznesingiz uchun samarali veb-loyiha ishlab chiqamiz",
+    "welcome": "Weblinega xush kelibsiz"
+  },
+  "solution": {
+    "text": "Biz e'tiborni moslashuvchan va mijozning ehtiyojlariga javob berishga qaratamiz.",
+    "title": "INDIVIDUAL YONLASHISH"
+  },
+  "statistics": {
+    "completed": "Tugallangan kalit taslim veb-sayt",
+    "costomers": "Qoniqarli mijozlar",
+    "years": "IT biznesidagi muvaffaqiyatli yillar"
+  }
+}

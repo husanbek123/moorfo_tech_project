@@ -1,0 +1,26 @@
+{
+  "advantages": {
+    "card": { "title": "Creating mobile applications" },
+    "title": "WE WILL HELP YOU BECOME YOUR BUSINESS\nUNIQUE SAND PROFITABLE"
+  },
+  "contact": {
+    "text": "Leave a request, voice your wishes, we will take care of all their implementation.",
+    "title": "LET'S\nSTART YOUR PROJECT"
+  },
+  "footer": {
+    "text": "We develop and implement websites, create a corporate identity, and constantly share information and technical support for projects with you."
+  },
+  "showcase": {
+    "title": "We will develop an effective web-project for your business",
+    "welcome": "Welcome to Webline"
+  },
+  "solution": {
+    "text": "We are focusing on being flexible and responsive to the client's needs.",
+    "title": "AN INDIVIDUAL\nAPPROACH"
+  },
+  "statistics": {
+    "completed": "COMPLETED\nturnkey website",
+    "costomers": "Satisfied\ncustomers",
+    "years": "Successful years\nin IT business"
+  }
+}

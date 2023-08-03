@@ -1,0 +1,41 @@
+@import "/src/index.scss";
+
+.card {
+  min-height: 150px;
+  position: relative;
+  border-radius: 6px;
+
+  div {
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    // left: 10%;
+    // top: 10%;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    border-radius: inherit;
+    background-color: rgba(0, 194, 0, 0.85);
+    // background-color: $secondaryGreen;
+
+    h3 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+
+  &:hover {
+    div {
+      opacity: 1;
+      visibility: visible;
+      box-shadow: 0 0 10px 1px rgba(0, 194, 0, 0.85);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.adventage {
+  display: flex;
+  column-gap: 5px;
+  // background-color: rgba(71, 71, 71, 0.69);
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+  border: 1px solid #71d63a;
+
+  &:hover {
+    border-radius: 16px;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.05);
+  }
+
+  .adventage__text {
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    img {
+      width: auto;
+      height: 80px;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+  .adventage__order {
+    display: flex;
+    align-items: end;
+
+    h2 {
+      font-size: 32px;
+    }
+  }
+}

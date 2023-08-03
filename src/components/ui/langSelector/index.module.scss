@@ -1,0 +1,42 @@
+.component {
+  .select {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    user-select: none;
+
+    .select_body {
+      min-width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      height: 30px;
+      cursor: pointer;
+      border: 1px solid white;
+    }
+    .select_list {
+      width: 100%;
+      visibility: hidden;
+      position: absolute;
+      top: 100%;
+      border-radius: 4px;
+      overflow: hidden;
+      padding-top: 10px;
+
+      &_open {
+        visibility: visible;
+      }
+
+      div {
+        padding: 5px 0;
+        cursor: pointer;
+        text-align: center;
+        height: 30px;
+        &:hover {
+          background-color: rgba(213, 213, 213, 0.178) !important;
+        }
+      }
+    }
+  }
+}

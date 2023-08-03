@@ -1,0 +1,10 @@
+.section {
+  // display: flex;
+  // justify-content: space-between;
+  // flex-wrap: wrap;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+  text-align: center;
+}
